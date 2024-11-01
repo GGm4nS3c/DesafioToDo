@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>ToDo list</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>ToDo list</h1>
+
+            <div class="boxinput">
+                <label for="nuevaTarea">Nueva Tarea: </label>
+                <input type="text" id="nuevaTareaInput" name="nuevaTarea" placeholder="Ingrese una tarea">
+                <button class="btnadd" onclick="agregarTarea();">Agregar</button>
+            </div>
+
+            <div class="boxResult">
+
+                <div id="cantidad">
+                    <h5>
+                        Total: <span id="total"></span>
+                    </h5>
+                    <h5>
+                        Realizadas: <span id="realizadas">:</span>
+                    </h5>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tarea</th>
+                            <th>Check</th>
+                            <th>Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista"></tbody>
+            </div>
+            </table>
+        </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
